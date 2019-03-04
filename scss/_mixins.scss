@@ -1,0 +1,35 @@
+// MIXINS:
+
+
+@mixin flexbox($direction, $wrap, $justify-content) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: $direction;
+            flex-direction: $direction;
+    -ms-flex-wrap: $wrap;
+        flex-wrap: $wrap;
+    -ms-flex-pack: distribute;
+        justify-content: $justify-content;
+}
+
+@mixin animation($name, $duration, $timing-fn, $iteration) {
+    -webkit-animation-name: $name;
+    animation-name: $name;
+    -webkit-animation-duration: $duration;
+            animation-duration: $duration;
+    -webkit-animation-timing-function: $timing-fn;
+            animation-timing-function: $timing-fn;
+    -webkit-animation-iteration-count: $iteration;
+            animation-iteration-count: $iteration;
+}
+
+@mixin border($top, $right, $bottom, $left, $radius) {
+    border-top: $top;
+	border-right: $right;
+	border-bottom: $bottom;
+	border-left: $left;
+	border-radius: $radius;
+}

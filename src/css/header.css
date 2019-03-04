@@ -1,0 +1,19 @@
+/* line 3, ../../scss/header.scss */
+.heading {
+  font-size: 1.5em; }
+  /* line 6, ../../scss/header.scss */
+  .heading__highlight {
+    color: #e8d415; }
+
+@media screen and (max-width: 590px) {
+  /* line 15, ../../scss/header.scss */
+  .heading {
+    padding-top: 0.6em;
+    font-size: 1.2em; } }
+@media screen and (max-width: 350px) {
+  /* line 22, ../../scss/header.scss */
+  .heading {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1em;
+    font-size: 1em; } }

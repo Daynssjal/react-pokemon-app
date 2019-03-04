@@ -1,0 +1,28 @@
+@import 'variables';
+
+.heading {
+    font-size: 1.5em;
+    
+    &__highlight {
+        color: $color-highlight;
+    }
+}
+
+
+// MEDIA QUERIES
+// -------------------------------------------------------------------------------------
+@media screen and (max-width: 590px) {
+    .heading {
+        padding-top: 0.6em;
+		font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .heading {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 1em;
+        font-size: 1em;
+    }
+}

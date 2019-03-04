@@ -1,0 +1,39 @@
+/* line 4, ../../scss/pokemonList.scss */
+.list {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  color: #848181;
+  list-style-type: none;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  /* line 13, ../../scss/pokemonList.scss */
+  .list__item {
+    width: 6em;
+    display: block;
+    padding: 0.8em 0.5em;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    /* line 18, ../../scss/pokemonList.scss */
+    .list__item:hover {
+      color: #b6b5b5; }
+
+@media screen and (max-width: 460px) {
+  /* line 32, ../../scss/pokemonList.scss */
+  .list__item {
+    padding: 0.6em 0.5em; } }
+@media screen and (max-width: 350px) {
+  /* line 40, ../../scss/pokemonList.scss */
+  .list__item {
+    font-size: 0.8em; } }

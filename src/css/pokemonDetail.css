@@ -1,0 +1,34 @@
+/* line 3, ../../scss/pokemonDetail.scss */
+.detail {
+  width: 100%; }
+  /* line 6, ../../scss/pokemonDetail.scss */
+  .detail__name {
+    margin: 0 0 0.8em;
+    color: #3F3F3F;
+    font-size: 2em;
+    font-weight: bold; }
+  /* line 13, ../../scss/pokemonDetail.scss */
+  .detail__img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em 1em;
+    background-color: #ffffff;
+    border: 1px solid #969696;
+    border-radius: 20%; }
+
+@media screen and (max-width: 590px) {
+  /* line 28, ../../scss/pokemonDetail.scss */
+  .detail__name {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0.5em 0 1em; } }
+@media screen and (max-width: 350px) {
+  /* line 38, ../../scss/pokemonDetail.scss */
+  .detail__name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0 1em; }
+  /* line 43, ../../scss/pokemonDetail.scss */
+  .detail__img {
+    width: 60%;
+    height: auto; } }

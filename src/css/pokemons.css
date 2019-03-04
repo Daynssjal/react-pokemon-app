@@ -1,0 +1,150 @@
+/* line 4, ../../scss/pokemons.scss */
+.container {
+  width: 32em;
+  height: 40em;
+  margin: 4em auto;
+  font-size: 1em;
+  background: #3F3F3F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: flex-start; }
+
+/* line 13, ../../scss/pokemons.scss */
+.section {
+  margin: 0 1em;
+  padding: 1.5em 0;
+  text-align: center; }
+  /* line 18, ../../scss/pokemons.scss */
+  .section--header {
+    height: 13%;
+    width: auto;
+    background: #8f8f8f;
+    margin: 1em 1em 0 1em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em; }
+  /* line 27, ../../scss/pokemons.scss */
+  .section--list {
+    height: 30%;
+    background-color: #f1f1f1; }
+  /* line 32, ../../scss/pokemons.scss */
+  .section--detail {
+    height: 55%;
+    margin-bottom: 1em;
+    background-color: #e5e5e5;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em; }
+  /* line 40, ../../scss/pokemons.scss */
+  .section__loader {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 4em auto;
+    border-top: 1.5em solid #fff;
+    border-right: 1.5em solid #fff;
+    border-bottom: 1.5em solid #DD0220;
+    border-left: 1.5em solid #DD0220;
+    border-radius: 50%;
+    -webkit-animation-name: spin;
+    animation-name: spin;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@media screen and (max-width: 590px) {
+  /* line 78, ../../scss/pokemons.scss */
+  .container {
+    width: 95%;
+    height: 42em;
+    margin: 2em auto; }
+
+  /* line 84, ../../scss/pokemons.scss */
+  .section--header {
+    height: 15%;
+    padding: 1em 0; }
+  /* line 88, ../../scss/pokemons.scss */
+  .section--list {
+    height: 30%; }
+  /* line 91, ../../scss/pokemons.scss */
+  .section--detail {
+    height: 55%; }
+  /* line 94, ../../scss/pokemons.scss */
+  .section__loader {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-top: 1em solid #eee;
+    border-right: 1em solid #eee;
+    border-bottom: 1em solid #DD0220;
+    border-left: 1em solid #DD0220;
+    border-radius: 50%; } }
+@media screen and (max-width: 460px) {
+  /* line 104, ../../scss/pokemons.scss */
+  .container {
+    height: 38em; }
+
+  /* line 107, ../../scss/pokemons.scss */
+  .section {
+    margin: 0 0.5em 0 0.5em; }
+    /* line 109, ../../scss/pokemons.scss */
+    .section--header {
+      margin-top: 0.5em;
+      height: 10%;
+      padding: 0; }
+    /* line 114, ../../scss/pokemons.scss */
+    .section--list {
+      height: 25%;
+      padding-bottom: 0; }
+    /* line 118, ../../scss/pokemons.scss */
+    .section--detail {
+      height: 55%;
+      margin-bottom: 0.5em; } }
+@media screen and (max-width: 443px) {
+  /* line 126, ../../scss/pokemons.scss */
+  .container {
+    height: 42em; }
+
+  /* line 130, ../../scss/pokemons.scss */
+  .section--list {
+    height: 35%;
+    padding-bottom: 0.5em; }
+  /* line 134, ../../scss/pokemons.scss */
+  .section--detail {
+    height: 55%; } }
+@media screen and (max-width: 350px) {
+  /* line 141, ../../scss/pokemons.scss */
+  .container {
+    width: 98%;
+    height: 42em;
+    margin: 2em auto; }
+
+  /* line 146, ../../scss/pokemons.scss */
+  .section {
+    padding: 1.5em 0; }
+    /* line 148, ../../scss/pokemons.scss */
+    .section__loader {
+      margin: 3.5em auto; } }
