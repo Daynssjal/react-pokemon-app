@@ -1,9 +1,7 @@
 import React from 'react';
-
 import './../css/pokemonDetail.css';
 
-
-const PokemonDetail = (props) => {
+const PokemonDetail = props => {
     const { pokemon, isLoading, errorSelected, capitalize } = props;
 
     if (isLoading) { return (<div className="section__loader"></div>); }

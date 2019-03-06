@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Pokemons from './Pokemons';
 
-
 class App extends Component {
   render() {
     return (

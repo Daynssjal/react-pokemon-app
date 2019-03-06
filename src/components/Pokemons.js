@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import PokemonList from './PokemonList';
 import PokemonDetail from './PokemonDetail';
-
 import './../css/pokemons.css';
 
 const BASE_URL = "https://pokeapi.co/api/v2/pokemon/";
@@ -35,7 +34,7 @@ class Pokemons extends Component {
             }).catch(error => this.setState({ error, areLoading: false }));
     }
 
-    showPokemon = (url) => {
+    showPokemon = url => {
         if (!this.state.selected || this.state.selected.url !== url) {
             this.setState({ isLoading: true });
 
@@ -55,7 +54,7 @@ class Pokemons extends Component {
         }
     }
 
-    capitalize = (str) => {
+    capitalize = str => {
         return str.slice(0, 1).toUpperCase() + str.slice(1);
     }
 
